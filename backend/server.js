@@ -27,8 +27,7 @@ app.use('/uploads',express.static('./images'))
 app.use(notFound);
 app.use(errorHandler);
  
-const PORT = "https://chatroom-backend-w6or.onrender.com"
-//process.env.PORT || 8000;
+const PORT = process.env.PORT || 8000;
 
 const server = app.listen(
   PORT,
