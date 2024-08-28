@@ -39,7 +39,7 @@ const server = app.listen(
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "https://chat-room-calv.vercel.app",
+    origin: "https://localhost:3000",
   },
 });
 
